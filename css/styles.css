@@ -3,6 +3,7 @@
   font-family: Papyrus, fantasy;
   text-align: center;
   background-color: black;
+  border: 2px solid red;
   padding: 8%;
 }
 #heading p {
@@ -27,6 +28,11 @@ body {
 
 h1 {
   padding: 2%;
+}
+
+form {
+  background-color: white;
+  padding: 10px;
 }
 
 button {
