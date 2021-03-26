@@ -9,8 +9,10 @@
 </head>
 <body>
   <div class="container">
-    <h1 class="center">Programming Language Suggester</h1>
-    <p class="center"><em>A short and simple test to help determine which programming language you should learn first!</em></p>
+    <div id="heading">
+      <h1>The Very Best Programming Language Suggester</h1>
+      <p><em>A short and simple test to help determine which programming language you should learn first!</em></p>
+    </div>
     <form id="suggester">
       <ol>
         <!-- Question1 -->
@@ -74,13 +76,84 @@
         <div class="form-check">
           <label>
             <input type="radio" name="interest" value="3">
-            What is the difference?
+            What's the difference?
           </label>
         </div>
         <br>
 
+        <!-- Question4 -->
+        <li>What is your favorite animal in this list?</li>
+        <div class="form-check">
+          <label>
+            <input type="radio" name="animal" value="0" checked>
+            Snake or Rock
+          </label>
+        </div>
+        <div class="form-check">
+          <label>
+            <input type="radio" name="animal" value="1">
+            Cat or Dog
+          </label>
+        </div>
+        <div class="form-check">
+          <label>
+            <input type="radio" name="animal" value="3">
+            Platypus
+          </label>
+        </div>
+        <br>
+
+        <!-- Question5 -->
+        <li>Are you chaotic?</li>
+        <div class="form-check">
+          <label>
+            <input type="radio" name="chaotic" value="0" checked>
+            No
+          </label>
+        </div>
+        <div class="form-check">
+          <label>
+            <input type="radio" name="chaotic" value="1">
+            Everyday
+          </label>
+        </div>
+        <div class="form-check">
+          <label>
+            <input type="radio" name="chaotic" value="3">
+            Yes, but only during certain lunar phases
+          </label>
+        </div>
+        <br>
+
+         <!-- Question6 -->
+         <li>How much time do you have?</li>
+         <div class="form-check">
+           <label>
+             <input type="radio" name="time" value="0" checked>
+             Days
+           </label>
+         </div>
+         <div class="form-check">
+           <label>
+             <input type="radio" name="time" value="1">
+             Time is meaningless. I am immortal
+           </label>
+         </div>
+         <div class="form-check">
+           <label>
+             <input type="radio" name="time" value="3">
+             A few months
+           </label>
+         </div>
+         <br>
       </ol>
     </form>
+
+  <div id="language-suggestion">
+    <p>
+      Congratulations! The Very Best Programming Suggestor recommends you should totally learn <span><strong></strong></span> first! This is a <span></span> language to learn.
+    </p>
+  </div>
   </div>
 </body>
 </html>

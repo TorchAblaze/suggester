@@ -1,3 +1,7 @@
-.center {
+#heading {
   text-align: center;
+}
+
+body {
+  background-color: azure;
 }
