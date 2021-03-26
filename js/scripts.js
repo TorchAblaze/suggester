@@ -1,6 +1,7 @@
 $(document).ready(function () {
   $("form#suggester").submit(function (event) {
     event.preventDefault();
+    const userName = $(".user-name").val();
     const progXP = parseInt(
       $("input:radio[name=prog-experience]:checked").val()
     );
@@ -22,13 +23,14 @@ $(document).ready(function () {
     }
 
     if (totalScore <= 4) {
-      langSuggest = "Ruby or Python";
+      langSuggest = "Either Ruby or Python";
     } else if (totalScore <= 9) {
       langSuggest = "C# (C Sharp)";
     } else {
       langSuggest = "JavaScript";
     }
 
+    $(".user-name").text(userName);
     $("#suggest-strength").text(suggestStrength);
     $(".best-suggest").text(langSuggest);
     $("#language-suggestion").show();
