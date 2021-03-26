@@ -9,19 +9,27 @@ $(document).ready(function () {
     const animal = parseInt($("input:radio[name=animal]:checked").val());
     const chaotic = parseInt($("input:radio[name=chaotic]:checked").val());
     const time = parseInt($("input:radio[name=chaotic]:checked").val());
-    const totalScore = progXP + color + devInterest + animal + chaotic + time;
+    const torture = parseInt($("input:radio[name=torture]:checked").val());
+    const totalScore =
+      progXP + color + devInterest + animal + chaotic + time + torture;
+    let suggestStrength;
     let langSuggest;
 
-    if (totalScore <= 3) {
+    if (totalScore === 4 || totalScore === 9 || totalScore === 10) {
+      suggestStrength = "mostly";
+    } else {
+      suggestStrength = "totally";
+    }
+
+    if (totalScore <= 4) {
       langSuggest = "Ruby or Python";
-    } else if (totalScore <= 7) {
+    } else if (totalScore <= 9) {
       langSuggest = "C# (C Sharp)";
-    } else if (totalScore === 8) {
-      langSuggest = "maybe JavaScript";
     } else {
       langSuggest = "JavaScript";
     }
 
+    $("#suggest-strength").text(suggestStrength);
     $(".best-suggest").text(langSuggest);
     $("#language-suggestion").show();
   });
