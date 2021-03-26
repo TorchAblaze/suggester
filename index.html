@@ -9,7 +9,78 @@
 </head>
 <body>
   <div class="container">
-    <h1>Programming Language Suggester</h1>
+    <h1 class="center">Programming Language Suggester</h1>
+    <p class="center"><em>A short and simple test to help determine which programming language you should learn first!</em></p>
+    <form id="suggester">
+      <ol>
+        <!-- Question1 -->
+        <li>Do you have any experience or exposure in computer programming?</li>
+        <div class="form-check">
+          <label>
+            <input type="radio" name="prog-experience" value="0" checked>
+            No, I don't have any experience/exposure
+          </label>
+        </div>
+        <div class="form-check">
+          <label>
+            <input type="radio" name="prog-experience" value="1">
+            I have some or very limited experience/exposure
+          </label>
+        </div>
+        <div class="form-check">
+          <label>
+            <input type="radio" name="prog-experience" value="3">
+            Yes, I have experience/exposure
+          </label>
+        </div>
+        <br>
+
+        <!-- Question2 -->
+        <li>What is your favorite color from this list?</li>
+        <div class="form-check">
+          <label>
+            <input type="radio" name="color" value="0" checked>
+            Red, Green or Blue
+          </label>
+        </div>
+        <div class="form-check">
+          <label>
+            <input type="radio" name="color" value="1">
+            Yellow
+          </label>
+        </div>
+        <div class="form-check">
+          <label>
+            <input type="radio" name="color" value="3">
+            Purple
+          </label>
+        </div>
+        <br>
+
+        <!-- Question3 -->
+        <li>What type of developing interests you most?</li>
+        <div class="form-check">
+          <label>
+            <input type="radio" name="interest" value="0" checked>
+            Backend Development
+          </label>
+        </div>
+        <div class="form-check">
+          <label>
+            <input type="radio" name="interest" value="1">
+            Backend or Frontend
+          </label>
+        </div>
+        <div class="form-check">
+          <label>
+            <input type="radio" name="interest" value="3">
+            What is the difference?
+          </label>
+        </div>
+        <br>
+
+      </ol>
+    </form>
   </div>
 </body>
 </html>
