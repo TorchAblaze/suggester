@@ -6,7 +6,7 @@
 
 ## Description
 
-The Very Best Programming Language Suggester is a website users can use to determine which programming language they should learn first. The webpage has a text box for the user's name and seven questions with three multiple choice options for each question. The user enters their name and selects the multiple choice option that they relate to the most. When the user answers all seven questions and clicks on the "Suggest Away" submit button, or selects the "enter" key on their keyboard, a personalized result message will appear below. Based on the user's answers, the result message will recommend a programming language the user should learn first based on their current knowledge and interests.
+The Very Best Programming Language Suggester is a website that users can utilize to determine which programming language they should learn first. The webpage has a text box for the user's name and seven questions with three multiple-choice options for each question. The user enters their name and selects the multiple-choice option that they relate to the most. When the user answers all seven questions and clicks on the "Suggest Away" submit button or selects the "enter" key on their keyboard, a personalized result message will appear below. Based on the user's answers, the result message will recommend a programming language the user should learn first based on their current knowledge and interests.
 
 ## Setup/Installation Requirements
 
