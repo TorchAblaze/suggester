@@ -9,7 +9,7 @@ $(document).ready(function () {
     const devInterest = parseInt($("input:radio[name=interest]:checked").val());
     const animal = parseInt($("input:radio[name=animal]:checked").val());
     const chaotic = parseInt($("input:radio[name=chaotic]:checked").val());
-    const time = parseInt($("input:radio[name=chaotic]:checked").val());
+    const time = parseInt($("input:radio[name=time]:checked").val());
     const torture = parseInt($("input:radio[name=torture]:checked").val());
     const totalScore =
       progXP + color + devInterest + animal + chaotic + time + torture;
