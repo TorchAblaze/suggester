@@ -30,6 +30,7 @@ $(document).ready(function () {
       langSuggest = "JavaScript";
     }
 
+    $("form#suggester").hide();
     $(".user-name").text(userName);
     $("#suggest-strength").text(suggestStrength);
     $(".best-suggest").text(langSuggest);
